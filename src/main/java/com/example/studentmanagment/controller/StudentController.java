@@ -27,7 +27,7 @@ public class StudentController {
 
     @GetMapping
     public List<Student> getStudent(@RequestParam(defaultValue = "0") int page,
-                                    @RequestParam(defaultValue = "1") int size,
+                                    @RequestParam(defaultValue = "2") int size,
                                     @RequestParam(defaultValue = "id")  String sortBy,
                                     @RequestParam(required = false) String name ) {
 
